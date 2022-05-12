@@ -45,8 +45,6 @@ public class Robot extends TimedRobot {
         // autonomous chooser on the dashboard.
         m_robotContainer = RobotContainer.getInstance();
         HAL.report(tResourceType.kResourceType_Framework, tInstances.kFramework_RobotBuilder);
-        m_robotContainer.m_drivetrainSubSys.resetEncoders();
-        m_robotContainer.m_drivetrainSubSys.resetGyro();
 
         // Timer stuff (experimental)
         m_elapsedTimer = new Timer();
@@ -93,9 +91,6 @@ public class Robot extends TimedRobot {
     @Override
     public void autonomousInit() {
         m_autonomousCommand = m_robotContainer.getAutonomousCommand();
-
-        m_robotContainer.m_drivetrainSubSys.resetEncoders();
-        m_robotContainer.m_drivetrainSubSys.resetGyro();
 
         // schedule the autonomous command (example)
         if (m_autonomousCommand != null) {
