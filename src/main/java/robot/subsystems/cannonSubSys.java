@@ -67,6 +67,14 @@ compressor = new Compressor(0, PneumaticsModuleType.CTREPCM);
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    /*
+    public void oogaOn() {
+        oogaHorn.set(Value.kForward);
+    }
 
+    public void oogaOff() {
+        oogaHorn.set(Value.kOff);
+    }
+    */
 }
 

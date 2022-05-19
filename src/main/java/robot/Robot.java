@@ -67,10 +67,10 @@ public class Robot extends TimedRobot {
         // block in order for anything in the Command-based framework to work.
         CommandScheduler.getInstance().run();
 
-        // Timer stuff (experimental)
+        /*// Timer stuff (experimental)
         if (m_elapsedTimer.get() > 180) {
             System.out.println("----- IT HAS BEEN 3 MINUTES, TIME TO CHANGE THE BATTERY-----");
-        }
+        }*/
     }
 
 
