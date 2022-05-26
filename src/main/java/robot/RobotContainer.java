@@ -139,7 +139,7 @@ final JoystickButton oogaHornBtn = new JoystickButton(driverJoystick, 11);
 oogaHornBtn.whileHeld(new oogaHornCmd( m_effectsSubSys ) ,true);
     SmartDashboard.putData("oogaHornBtn",new oogaHornCmd( m_effectsSubSys ) );
 
-final JoystickButton compressorOffBtn = new JoystickButton(driverJoystick, 7);        
+final JoystickButton compressorOffBtn = new JoystickButton(driverJoystick, 10);        
 compressorOffBtn.whenPressed(new compressorOffCmd( m_cannonSubSys ) ,true);
     SmartDashboard.putData("compressorOffBtn",new compressorOffCmd( m_cannonSubSys ) );
 

@@ -49,12 +49,13 @@ public class compressorOffCmd extends CommandBase {
     // Called when the command is initially scheduled.
     @Override
     public void initialize() {
+        System.out.println("Disable called");
+        m_cannonSubSys.disableCompressor();
     }
 
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        m_cannonSubSys.disableCompressor();
     }
 
     // Called once the command ends or is interrupted.
